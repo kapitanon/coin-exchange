@@ -10,12 +10,12 @@ padding: 1.5rem 0 1.5rem 5rem;
 
 export default class AccountBalance extends Component {
     render() {
-        let showBal = <>AccountBalance: ${this.props.amount}</>
+        let showBal = this.props.showBalance ? <>AccountBalance: ${this.props.amount}</> : '';
         const buttonText = this.props.showBalance ? 'Hide Balance' : 'Show Balance';
         return (
             <Section>
                 { showBal }
-         < button onClick={this.handleBalance} >{buttonText}</button> 
+         < button onClick={this.props.handleBalance} >{buttonText}</button> 
             </Section>
         );
     }
