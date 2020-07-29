@@ -30,10 +30,12 @@ export default class Coin extends Component {
     }
 
     render() {
+    const balance = <><CoinRow>{this.props.balance}</CoinRow></>
         return (
             <tr>
                 <CoinRow>{this.props.name}</CoinRow>
                 <CoinRow>{this.props.ticker}</CoinRow>
+                { balance }
                 <CoinRow>${this.props.price}</CoinRow>
                 <CoinRow> <form action="#" method="POST" >
                     <button onClick={this.handleClick}>Refresh</button>
