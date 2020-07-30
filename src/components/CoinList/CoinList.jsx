@@ -17,7 +17,7 @@ export default class CoinList extends Component {
               <tr>
                 <th>Name</th>
                 <th>Ticker</th>
-                { balance }
+                {balance}
                 <th>Price</th>
                 <th>Actions</th>
               </tr>

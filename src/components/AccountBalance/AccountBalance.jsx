@@ -16,7 +16,9 @@ export default class AccountBalance extends Component {
         return (
             <Section>
                 { showBal }
-         < button onClick={this.props.handleBalance} >{buttonText}</button> 
+                <button onClick={this.props.handleBalance}> 
+                    {buttonText} 
+                </button> 
             </Section>
         );
     }
